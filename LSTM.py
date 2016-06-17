@@ -22,7 +22,7 @@ import time
 import datetime
 
 PATH = "./thrones/train.txt"
-text = open(PATH).read().lower()
+text = open(PATH).read()
 OUTPUT_COUNT = 10000
 # cut the text in semi-redundant sequences of maxlen characters
 maxlen = 40
