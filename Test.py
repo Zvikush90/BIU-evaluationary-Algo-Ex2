@@ -14,25 +14,22 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
 import numpy as np
+import math
 import random
 import sys
 import os
 import time
 import datetime
 
+TEST_PATH = "./thrones/test.txt"
 PATH = "./thrones/train.txt"
 text = open(PATH).read()
+test_text = open(PATH).read()
 OUTPUT_COUNT = 10000
 # cut the text in semi-redundant sequences of maxlen characters
 maxlen = 40
 step = 3
 batch_size = 128
-if (sys.argv[1] == "play"):
-    print('original corpus length:', len(text))
-    batch_size = 1
-    text = text[:5000]
-    OUTPUT_COUNT = 100
-    maxlen = 20
 
 print('corpus length:', len(text))
 
@@ -40,7 +37,6 @@ chars = set(text)
 print('total chars:', len(chars))
 char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
-
 
 sentences = []
 next_chars = []
@@ -68,9 +64,7 @@ model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
-if(sys.argv[2]!="None"):
-    model.load_weights(sys.argv[2])
-    print('Loaded previous weights')
+
 
 def sample(a, temperature=1.0):
     # helper function to sample an index from a probability array
@@ -79,49 +73,44 @@ def sample(a, temperature=1.0):
     return np.argmax(np.random.multinomial(1, a, 1))
 
 
-# train the model, output generated text after each iteration
-for iteration in range(1, 60):
-    print()
+def get_weights():
+    weights = []
+    # traverse root directory, and list directories as dirs and files as files
+    for root, dirs, files in os.walk("./Gen_Txt/run"):
+        path = root.split('/')
+        print((len(path) - 1) * '---', os.path.basename(root))
+        for file in files:
+            print(len(path) * '---', file)
+            if(str(file)=="weights"):
+                weights.append(root+"\\"+str(file))
+    return weights
+
+
+weights = get_weights()
+
+for w in weights:
     print('-' * 50)
-    print('Iteration', iteration)
-    model.fit(X, y, batch_size=batch_size, nb_epoch=1, show_accuracy=True)
-
-    start_index = random.randint(0, len(text) - maxlen - 1)
-
-    to_save = []
+    print('Weight', w)
+    model.load_weights(w)
+    print('Loaded weights')
     probabilities = [0.2, 0.5, 1.0, 1.2]
+
     for diversity in probabilities:
-        print()
-        print('----- diversity:', diversity)
-        generated = ''
-        sentence = text[start_index: start_index + maxlen]
-        generated += sentence
-        print('----- Generating with seed: "' + sentence + '"')
+        print('-' * 10)
+        print('Diversity', diversity)
+        success_count = 0
+        count = 0
+        cross_entropy = 0.0
 
-        for i in range(OUTPUT_COUNT):
-            x = np.zeros((1, maxlen, len(chars)))
-            for t, char in enumerate(sentence):
-                x[0, t, char_indices[char]] = 1.
-
-            preds = model.predict(x, verbose=0)[0]
+        for c in test_text:
+            preds = model.predict(c, verbose=1)[0]
             next_index = sample(preds, diversity)
             next_char = indices_char[next_index]
+            cross_entropy = cross_entropy - math.log(preds[next_char],2)
+            if (count < len(test_text)):
+                if (next_char == test_text[count + 1]):
+                    success_count = success_count + 1
 
-            generated += next_char
-            sentence = sentence[1:] + next_char
-
-        to_save.append(generated)
-        if (sys.argv[1] == "play"):
-            print(generated)
-
-    # saving weights generated text to file
-    ts = time.time()
-    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d_%H-%M-%S')
-    output_path = "./Gen_Txt/" + str(sys.argv[1]) + "/" + st + "/"
-    os.makedirs(output_path)
-    model.save_weights(output_path+"weights", overwrite=True)
-
-    for index in range(len(to_save)):
-        text_file = open(output_path + str(iteration) + "Iter" + str(probabilities[index]) + "Prob.txt", "w")
-        text_file.write(to_save[index])
-        text_file.close()
+            count = count + 1
+        print('Accuracy',float(success_count/count))
+        print('Cross Entropy',cross_entropy)
