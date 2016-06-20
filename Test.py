@@ -31,7 +31,7 @@ maxlen = 40
 step = 3
 batch_size = 128
 
-print('corpus length:', len(text))
+print('Test corpus length:', len(test_text))
 
 chars = set(text)
 print('total chars:', len(chars))
@@ -40,9 +40,9 @@ indices_char = dict((i, c) for i, c in enumerate(chars))
 
 sentences = []
 next_chars = []
-for i in range(0, len(text) - maxlen, step):
-    sentences.append(text[i: i + maxlen])
-    next_chars.append(text[i + maxlen])
+for i in range(0, len(test_text) - maxlen, step):
+    sentences.append(test_text[i: i + maxlen])
+    next_chars.append(test_text[i + maxlen])
 print('nb sequences:', len(sentences))
 
 print('Vectorization...')
@@ -93,6 +93,8 @@ for w in weights:
     print('Weight', w)
     model.load_weights(w)
     print('Loaded weights')
+    model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
+    print('Compiling new weights...')
     probabilities = [0.2, 0.5, 1.0, 1.2]
 
     for diversity in probabilities:
@@ -102,15 +104,18 @@ for w in weights:
         count = 0
         cross_entropy = 0.0
 
-        for c in test_text:
-            preds = model.predict(c, verbose=1)[0]
+        for sentence in sentences:
+            x = np.zeros((1, maxlen, len(chars)))
+            for t, char in enumerate(sentence):
+                x[0, t, char_indices[char]] = 1.
+            preds = model.predict(x, verbose=1)[0]
             next_index = sample(preds, diversity)
             next_char = indices_char[next_index]
             cross_entropy = cross_entropy - math.log(preds[next_char],2)
             if (count < len(test_text)):
-                if (next_char == test_text[count + 1]):
+                if (next_char == next_chars[count]):
                     success_count = success_count + 1
 
             count = count + 1
         print('Accuracy',float(success_count/count))
-        print('Cross Entropy',cross_entropy)
+        print('Cross Entropy',float(cross_entropy/count))
