@@ -108,10 +108,10 @@ for w in weights:
             x = np.zeros((1, maxlen, len(chars)))
             for t, char in enumerate(sentence):
                 x[0, t, char_indices[char]] = 1.
-            preds = model.predict(x, verbose=1)[0]
+            preds = model.predict(x, verbose=0)[0]
             next_index = sample(preds, diversity)
             next_char = indices_char[next_index]
-            cross_entropy = cross_entropy - math.log(preds[next_char],2)
+            cross_entropy = cross_entropy - math.log(preds[next_index],2)
             if (count < len(test_text)):
                 if (next_char == next_chars[count]):
                     success_count = success_count + 1
