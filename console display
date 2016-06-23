@@ -1,0 +1,150 @@
+C:\Anaconda2\python.exe "C:/Users/User/Documents/My University BIU/Year 3/Semester 2/Evolutionary Algorithms/Exercise/Ex2/LSTM.py" run None
+Using Theano backend.
+Using gpu device 0: GeForce GT 630M (CNMeM is disabled, cuDNN not available)
+corpus length: 9275779
+total chars: 60
+nb sequences: 3091913
+Vectorization...
+Build model...
+
+--------------------------------------------------
+Iteration 1
+Epoch 1/1
+3091913/3091913 [==============================] - 44732s - loss: 1.7787 - acc: 0.4749
+
+----- diversity: 0.2
+----- Generating with seed: "e no? Better you should pray that we do "
+
+----- diversity: 0.5
+----- Generating with seed: "e no? Better you should pray that we do "
+
+----- diversity: 1.0
+----- Generating with seed: "e no? Better you should pray that we do "
+
+----- diversity: 1.2
+----- Generating with seed: "e no? Better you should pray that we do "
+
+--------------------------------------------------
+Iteration 2
+Epoch 1/1
+3091913/3091913 [==============================] - 46017s - loss: 1.3892 - acc: 0.5771
+
+----- diversity: 0.2
+----- Generating with seed: "rmont trusted him, you say, but what of "
+
+----- diversity: 0.5
+----- Generating with seed: "rmont trusted him, you say, but what of "
+
+----- diversity: 1.0
+----- Generating with seed: "rmont trusted him, you say, but what of "
+
+----- diversity: 1.2
+----- Generating with seed: "rmont trusted him, you say, but what of "
+
+--------------------------------------------------
+Iteration 3
+Epoch 1/1
+3091913/3091913 [==============================] - 45089s - loss: 1.3032 - acc: 0.6002
+
+----- diversity: 0.2
+----- Generating with seed: "gers, even some oats and barleycorn and "
+
+----- diversity: 0.5
+----- Generating with seed: "gers, even some oats and barleycorn and "
+
+----- diversity: 1.0
+----- Generating with seed: "gers, even some oats and barleycorn and "
+
+----- diversity: 1.2
+----- Generating with seed: "gers, even some oats and barleycorn and "
+
+--------------------------------------------------
+Iteration 4
+Epoch 1/1
+3091913/3091913 [==============================] - 45704s - loss: 1.2588 - acc: 0.6122
+
+----- diversity: 0.2
+----- Generating with seed: "le station." The perfumed boys he wrappe"
+
+----- diversity: 0.5
+----- Generating with seed: "le station." The perfumed boys he wrappe"
+
+----- diversity: 1.0
+----- Generating with seed: "le station." The perfumed boys he wrappe"
+
+----- diversity: 1.2
+----- Generating with seed: "le station." The perfumed boys he wrappe"
+
+--------------------------------------------------
+Iteration 5
+Epoch 1/1
+3091913/3091913 [==============================] - 46755s - loss: 1.2303 - acc: 0.6198
+
+----- diversity: 0.2
+----- Generating with seed: ", dark purple welts and faded green-and-"
+
+----- diversity: 0.5
+----- Generating with seed: ", dark purple welts and faded green-and-"
+
+----- diversity: 1.0
+----- Generating with seed: ", dark purple welts and faded green-and-"
+
+----- diversity: 1.2
+----- Generating with seed: ", dark purple welts and faded green-and-"
+
+--------------------------------------------------
+Iteration 6
+Epoch 1/1
+3091913/3091913 [==============================] - 49444s - loss: 1.2093 - acc: 0.6253
+
+----- diversity: 0.2
+----- Generating with seed: "d men and she's yours. But a man less an"
+
+----- diversity: 0.5
+----- Generating with seed: "d men and she's yours. But a man less an"
+
+----- diversity: 1.0
+----- Generating with seed: "d men and she's yours. But a man less an"
+
+----- diversity: 1.2
+----- Generating with seed: "d men and she's yours. But a man less an"
+
+--------------------------------------------------
+Iteration 7
+Epoch 1/1
+3091913/3091913 [==============================] - 51680s - loss: 1.1930 - acc: 0.6301
+
+----- diversity: 0.2
+----- Generating with seed: "bb looks at me as Edmure did, I do not k"
+
+----- diversity: 0.5
+----- Generating with seed: "bb looks at me as Edmure did, I do not k"
+
+----- diversity: 1.0
+----- Generating with seed: "bb looks at me as Edmure did, I do not k"
+
+----- diversity: 1.2
+----- Generating with seed: "bb looks at me as Edmure did, I do not k"
+
+--------------------------------------------------
+Iteration 8
+Epoch 1/1
+3091913/3091913 [==============================] - 60145s - loss: 1.1793 - acc: 0.6337
+
+----- diversity: 0.2
+----- Generating with seed: " Many a night she had watched Prince Rha"
+
+----- diversity: 0.5
+----- Generating with seed: " Many a night she had watched Prince Rha"
+
+----- diversity: 1.0
+----- Generating with seed: " Many a night she had watched Prince Rha"
+
+----- diversity: 1.2
+----- Generating with seed: " Many a night she had watched Prince Rha"
+
+--------------------------------------------------
+Iteration 9
+Epoch 1/1
+ 177792/3091913 [>.............................] - ETA: 50231s - loss: 1.1604 - acc: 0.6369
+Process finished with exit code -1

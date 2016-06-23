@@ -25,6 +25,7 @@ TEST_PATH = "./thrones/test.txt"
 PATH = "./thrones/train.txt"
 text = open(PATH).read()
 test_text = open(PATH).read()
+
 OUTPUT_COUNT = 10000
 # cut the text in semi-redundant sequences of maxlen characters
 maxlen = 40
@@ -43,6 +44,9 @@ next_chars = []
 for i in range(0, len(test_text) - maxlen, step):
     sentences.append(test_text[i: i + maxlen])
     next_chars.append(test_text[i + maxlen])
+
+#shortening sentences
+sentences = sentences[:1000]
 print('nb sequences:', len(sentences))
 
 print('Vectorization...')
@@ -95,7 +99,7 @@ for w in weights:
     print('Loaded weights')
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
     print('Compiling new weights...')
-    probabilities = [0.2, 0.5, 1.0, 1.2]
+    probabilities = [0.2]
 
     for diversity in probabilities:
         print('-' * 10)
@@ -117,5 +121,5 @@ for w in weights:
                     success_count = success_count + 1
 
             count = count + 1
-        print('Accuracy',float(success_count/count))
+        print('Accuracy',float(float(success_count)/float(count)))
         print('Cross Entropy',float(cross_entropy/count))
