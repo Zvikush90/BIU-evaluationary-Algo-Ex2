@@ -146,5 +146,33 @@ Epoch 1/1
 --------------------------------------------------
 Iteration 9
 Epoch 1/1
- 177792/3091913 [>.............................] - ETA: 50231s - loss: 1.1604 - acc: 0.6369
-Process finished with exit code -1
+3091913/3091913 [==============================] - 47228s - loss: 1.1691 - acc: 0.6364
+
+----- diversity: 0.2
+----- Generating with seed: "urely one of the river lords would want "
+
+----- diversity: 0.5
+----- Generating with seed: "urely one of the river lords would want "
+
+----- diversity: 1.0
+----- Generating with seed: "urely one of the river lords would want "
+
+----- diversity: 1.2
+----- Generating with seed: "urely one of the river lords would want "
+
+--------------------------------------------------
+Iteration 10
+Epoch 1/1
+3091913/3091913 [==============================] - 54191s - loss: 1.1596 - acc: 0.6394
+
+----- diversity: 0.2
+----- Generating with seed: " Sybelle?" "If it please you." Whether S"
+
+----- diversity: 0.5
+----- Generating with seed: " Sybelle?" "If it please you." Whether S"
+
+----- diversity: 1.0
+----- Generating with seed: " Sybelle?" "If it please you." Whether S"
+
+----- diversity: 1.2
+----- Generating with seed: " Sybelle?" "If it please you." Whether S"
