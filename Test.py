@@ -45,7 +45,8 @@ for i in range(0, len(test_text) - maxlen, step):
     sentences.append(test_text[i: i + maxlen])
     next_chars.append(test_text[i + maxlen])
 
-#shortening sentences
+# shuffling and shortening sentences
+np.random.shuffle(sentences)
 sentences = sentences[:1000]
 print('nb sequences:', len(sentences))
 
@@ -85,21 +86,24 @@ def get_weights():
         print((len(path) - 1) * '---', os.path.basename(root))
         for file in files:
             print(len(path) * '---', file)
-            if(str(file)=="weights"):
-                weights.append(root+"\\"+str(file))
+            if (str(file) == "weights"):
+                weights.append(root + "\\" + str(file))
     return weights
 
 
 weights = get_weights()
 
+iter = 1
 for w in weights:
     print('-' * 50)
+    print('Iteration:', iter)
+    iter = iter + 1
     print('Weight', w)
     model.load_weights(w)
     print('Loaded weights')
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
     print('Compiling new weights...')
-    probabilities = [0.2]
+    probabilities = [0.2, 0.5, 1.0, 1.2]
 
     for diversity in probabilities:
         print('-' * 10)
@@ -115,11 +119,11 @@ for w in weights:
             preds = model.predict(x, verbose=0)[0]
             next_index = sample(preds, diversity)
             next_char = indices_char[next_index]
-            cross_entropy = cross_entropy - math.log(preds[next_index],2)
+            cross_entropy = cross_entropy - math.log(preds[next_index], 2)
             if (count < len(test_text)):
                 if (next_char == next_chars[count]):
                     success_count = success_count + 1
 
             count = count + 1
-        print('Accuracy',float(float(success_count)/float(count)))
-        print('Cross Entropy',float(cross_entropy/count))
+        print('Accuracy', float(float(success_count) / float(count)))
+        print('Cross Entropy', float(cross_entropy / count))
