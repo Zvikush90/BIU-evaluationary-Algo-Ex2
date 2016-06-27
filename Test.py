@@ -10,6 +10,7 @@ has at least ~100k characters. ~1M is better.
 '''
 
 from __future__ import print_function
+from __future__ import division
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
@@ -46,8 +47,7 @@ for i in range(0, len(test_text) - maxlen, step):
     next_chars.append(test_text[i + maxlen])
 
 # shuffling and shortening sentences
-np.random.shuffle(sentences)
-sentences = sentences[:1000]
+sentences = sentences[:100]
 print('nb sequences:', len(sentences))
 
 print('Vectorization...')
@@ -125,5 +125,5 @@ for w in weights:
                     success_count = success_count + 1
 
             count = count + 1
-        print('Accuracy', float(float(success_count) / float(count)))
-        print('Cross Entropy', float(cross_entropy / count))
+        print('Accuracy', success_count/count)
+        print('Cross Entropy', cross_entropy / count)

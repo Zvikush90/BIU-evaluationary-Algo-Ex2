@@ -176,3 +176,71 @@ Epoch 1/1
 
 ----- diversity: 1.2
 ----- Generating with seed: " Sybelle?" "If it please you." Whether S"
+
+--------------------------------------------------
+Iteration 11
+Epoch 1/1
+3091913/3091913 [==============================] - 46996s - loss: 1.1517 - acc: 0.6414
+
+----- diversity: 0.2
+----- Generating with seed: "or the night, it was no easy thing to wa"
+
+----- diversity: 0.5
+----- Generating with seed: "or the night, it was no easy thing to wa"
+
+----- diversity: 1.0
+----- Generating with seed: "or the night, it was no easy thing to wa"
+
+----- diversity: 1.2
+----- Generating with seed: "or the night, it was no easy thing to wa"
+
+--------------------------------------------------
+Iteration 12
+Epoch 1/1
+3091913/3091913 [==============================] - 44251s - loss: 1.1446 - acc: 0.6434
+
+----- diversity: 0.2
+----- Generating with seed: " half. It had been the Old Bear's compan"
+
+----- diversity: 0.5
+----- Generating with seed: " half. It had been the Old Bear's compan"
+
+----- diversity: 1.0
+----- Generating with seed: " half. It had been the Old Bear's compan"
+
+----- diversity: 1.2
+----- Generating with seed: " half. It had been the Old Bear's compan"
+
+--------------------------------------------------
+Iteration 13
+Epoch 1/1
+3091913/3091913 [==============================] - 46409s - loss: 1.1381 - acc: 0.6452
+
+----- diversity: 0.2
+----- Generating with seed: "ing how glad he is to have us, custom be"
+
+----- diversity: 0.5
+----- Generating with seed: "ing how glad he is to have us, custom be"
+
+----- diversity: 1.0
+----- Generating with seed: "ing how glad he is to have us, custom be"
+
+----- diversity: 1.2
+----- Generating with seed: "ing how glad he is to have us, custom be"
+
+--------------------------------------------------
+Iteration 14
+Epoch 1/1
+3091913/3091913 [==============================] - 61679s - loss: 1.1512 - acc: 0.6414
+
+----- diversity: 0.2
+----- Generating with seed: " the yellow field. "He's even bigger tha"
+
+----- diversity: 0.5
+----- Generating with seed: " the yellow field. "He's even bigger tha"
+
+----- diversity: 1.0
+----- Generating with seed: " the yellow field. "He's even bigger tha"
+
+----- diversity: 1.2
+----- Generating with seed: " the yellow field. "He's even bigger tha"

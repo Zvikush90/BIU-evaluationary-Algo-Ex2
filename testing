@@ -1,0 +1,362 @@
+C:\Anaconda2\python.exe "C:/Users/User/Documents/My University BIU/Year 3/Semester 2/Evolutionary Algorithms/Exercise/Ex2/Test.py"
+Using Theano backend.
+Using gpu device 0: GeForce GT 630M (CNMeM is disabled, cuDNN not available)
+Test corpus length: 9275779
+total chars: 60
+nb sequences: 100
+Vectorization...
+Build model...
+------ run
+------ 2016-06-17_06-32-46
+--------- 1Iter0.2Prob.txt
+--------- 1Iter0.5Prob.txt
+--------- 1Iter1.0Prob.txt
+--------- 1Iter1.2Prob.txt
+--------- weights
+------ 2016-06-17_20-34-31
+--------- 2Iter0.2Prob.txt
+--------- 2Iter0.5Prob.txt
+--------- 2Iter1.0Prob.txt
+--------- 2Iter1.2Prob.txt
+--------- weights
+------ 2016-06-18_10-20-31
+--------- 3Iter0.2Prob.txt
+--------- 3Iter0.5Prob.txt
+--------- 3Iter1.0Prob.txt
+--------- 3Iter1.2Prob.txt
+--------- weights
+------ 2016-06-19_00-18-08
+--------- 4Iter0.2Prob.txt
+--------- 4Iter0.5Prob.txt
+--------- 4Iter1.0Prob.txt
+--------- 4Iter1.2Prob.txt
+--------- weights
+------ 2016-06-19_14-38-09
+--------- 5Iter0.2Prob.txt
+--------- 5Iter0.5Prob.txt
+--------- 5Iter1.0Prob.txt
+--------- 5Iter1.2Prob.txt
+--------- weights
+------ 2016-06-20_05-36-42
+--------- 6Iter0.2Prob.txt
+--------- 6Iter0.5Prob.txt
+--------- 6Iter1.0Prob.txt
+--------- 6Iter1.2Prob.txt
+--------- weights
+------ 2016-06-20_21-15-59
+--------- 7Iter0.2Prob.txt
+--------- 7Iter0.5Prob.txt
+--------- 7Iter1.0Prob.txt
+--------- 7Iter1.2Prob.txt
+--------- weights
+------ 2016-06-21_16-08-37
+--------- 8Iter0.2Prob.txt
+--------- 8Iter0.5Prob.txt
+--------- 8Iter1.0Prob.txt
+--------- 8Iter1.2Prob.txt
+--------- weights
+------ 2016-06-23_00-07-50
+--------- 9Iter0.2Prob.txt
+--------- 9Iter0.5Prob.txt
+--------- 9Iter1.0Prob.txt
+--------- 9Iter1.2Prob.txt
+--------- weights
+------ 2016-06-23_17-03-21
+--------- 10Iter0.2Prob.txt
+--------- 10Iter0.5Prob.txt
+--------- 10Iter1.0Prob.txt
+--------- 10Iter1.2Prob.txt
+--------- weights
+------ 2016-06-25_03-58-30
+--------- 11Iter0.2Prob.txt
+--------- 11Iter0.5Prob.txt
+--------- 11Iter1.0Prob.txt
+--------- 11Iter1.2Prob.txt
+--------- weights
+------ 2016-06-25_17-30-34
+--------- 12Iter0.2Prob.txt
+--------- 12Iter0.5Prob.txt
+--------- 12Iter1.0Prob.txt
+--------- 12Iter1.2Prob.txt
+--------- weights
+------ 2016-06-26_07-37-04
+--------- 13Iter0.2Prob.txt
+--------- 13Iter0.5Prob.txt
+--------- 13Iter1.0Prob.txt
+--------- 13Iter1.2Prob.txt
+--------- weights
+--------------------------------------------------
+Iteration: 1
+Weight ./Gen_Txt/run\2016-06-17_06-32-46\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.59
+Cross Entropy 1.12114601999
+----------
+Diversity 0.5
+Accuracy 0.6
+Cross Entropy 1.35090686076
+----------
+Diversity 1.0
+Accuracy 0.5
+Cross Entropy 2.17294487049
+----------
+Diversity 1.2
+Accuracy 0.41
+Cross Entropy 2.90858213581
+--------------------------------------------------
+Iteration: 2
+Weight ./Gen_Txt/run\2016-06-17_20-34-31\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.64
+Cross Entropy 0.964288776801
+----------
+Diversity 0.5
+Accuracy 0.6
+Cross Entropy 1.06752652825
+----------
+Diversity 1.0
+Accuracy 0.48
+Cross Entropy 1.78603565081
+----------
+Diversity 1.2
+Accuracy 0.46
+Cross Entropy 2.5534351436
+--------------------------------------------------
+Iteration: 3
+Weight ./Gen_Txt/run\2016-06-18_10-20-31\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.69
+Cross Entropy 0.944536531195
+----------
+Diversity 0.5
+Accuracy 0.65
+Cross Entropy 1.15413171794
+----------
+Diversity 1.0
+Accuracy 0.55
+Cross Entropy 1.83441239762
+----------
+Diversity 1.2
+Accuracy 0.48
+Cross Entropy 2.27224515759
+--------------------------------------------------
+Iteration: 4
+Weight ./Gen_Txt/run\2016-06-19_00-18-08\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.69
+Cross Entropy 0.974543844459
+----------
+Diversity 0.5
+Accuracy 0.65
+Cross Entropy 1.10907118013
+----------
+Diversity 1.0
+Accuracy 0.54
+Cross Entropy 2.09735262696
+----------
+Diversity 1.2
+Accuracy 0.53
+Cross Entropy 2.47551135079
+--------------------------------------------------
+Iteration: 5
+Weight ./Gen_Txt/run\2016-06-19_14-38-09\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.67
+Cross Entropy 0.890046860042
+----------
+Diversity 0.5
+Accuracy 0.66
+Cross Entropy 1.0721360587
+----------
+Diversity 1.0
+Accuracy 0.57
+Cross Entropy 1.70635761669
+----------
+Diversity 1.2
+Accuracy 0.49
+Cross Entropy 2.29229635034
+--------------------------------------------------
+Iteration: 6
+Weight ./Gen_Txt/run\2016-06-20_05-36-42\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.68
+Cross Entropy 0.890212844437
+----------
+Diversity 0.5
+Accuracy 0.64
+Cross Entropy 1.17009198946
+----------
+Diversity 1.0
+Accuracy 0.61
+Cross Entropy 1.85096633223
+----------
+Diversity 1.2
+Accuracy 0.48
+Cross Entropy 2.29687644685
+--------------------------------------------------
+Iteration: 7
+Weight ./Gen_Txt/run\2016-06-20_21-15-59\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.67
+Cross Entropy 0.921182034717
+----------
+Diversity 0.5
+Accuracy 0.68
+Cross Entropy 1.09866683865
+----------
+Diversity 1.0
+Accuracy 0.55
+Cross Entropy 1.80857608519
+----------
+Diversity 1.2
+Accuracy 0.47
+Cross Entropy 2.11770623388
+--------------------------------------------------
+Iteration: 8
+Weight ./Gen_Txt/run\2016-06-21_16-08-37\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.72
+Cross Entropy 0.869545812096
+----------
+Diversity 0.5
+Accuracy 0.65
+Cross Entropy 1.05477875465
+----------
+Diversity 1.0
+Accuracy 0.52
+Cross Entropy 1.79384183937
+----------
+Diversity 1.2
+Accuracy 0.49
+Cross Entropy 2.07082583035
+--------------------------------------------------
+Iteration: 9
+Weight ./Gen_Txt/run\2016-06-23_00-07-50\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.7
+Cross Entropy 0.808541769023
+----------
+Diversity 0.5
+Accuracy 0.69
+Cross Entropy 0.931907733206
+----------
+Diversity 1.0
+Accuracy 0.57
+Cross Entropy 2.00935736404
+----------
+Diversity 1.2
+Accuracy 0.57
+Cross Entropy 1.57349723517
+--------------------------------------------------
+Iteration: 10
+Weight ./Gen_Txt/run\2016-06-23_17-03-21\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.68
+Cross Entropy 0.913689077477
+----------
+Diversity 0.5
+Accuracy 0.65
+Cross Entropy 1.07645904251
+----------
+Diversity 1.0
+Accuracy 0.53
+Cross Entropy 1.96983489061
+----------
+Diversity 1.2
+Accuracy 0.54
+Cross Entropy 1.6501664213
+--------------------------------------------------
+Iteration: 11
+Weight ./Gen_Txt/run\2016-06-25_03-58-30\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.69
+Cross Entropy 0.815151974448
+----------
+Diversity 0.5
+Accuracy 0.68
+Cross Entropy 1.03527548541
+----------
+Diversity 1.0
+Accuracy 0.64
+Cross Entropy 1.6128436983
+----------
+Diversity 1.2
+Accuracy 0.55
+Cross Entropy 2.00049017235
+--------------------------------------------------
+Iteration: 12
+Weight ./Gen_Txt/run\2016-06-25_17-30-34\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.71
+Cross Entropy 0.804659615052
+----------
+Diversity 0.5
+Accuracy 0.66
+Cross Entropy 1.0164607313
+----------
+Diversity 1.0
+Accuracy 0.6
+Cross Entropy 1.48704297184
+----------
+Diversity 1.2
+Accuracy 0.54
+Cross Entropy 1.99051774575
+--------------------------------------------------
+Iteration: 13
+Weight ./Gen_Txt/run\2016-06-26_07-37-04\weights
+Loaded weights
+Compiling new weights...
+----------
+Diversity 0.2
+Accuracy 0.72
+Cross Entropy 0.807003761053
+----------
+Diversity 0.5
+Accuracy 0.67
+Cross Entropy 0.924754583812
+----------
+Diversity 1.0
+Accuracy 0.57
+Cross Entropy 1.41951238664
+----------
+Diversity 1.2
+Accuracy 0.48
+Cross Entropy 2.22818857909
+
+
