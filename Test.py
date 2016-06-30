@@ -47,7 +47,7 @@ for i in range(0, len(test_text) - maxlen, step):
     next_chars.append(test_text[i + maxlen])
 
 # shuffling and shortening sentences
-sentences = sentences[:100]
+sentences = sentences[:1000]
 print('nb sequences:', len(sentences))
 
 print('Vectorization...')
