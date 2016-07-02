@@ -27,12 +27,7 @@ OUTPUT_COUNT = 10000
 maxlen = 40
 step = 3
 batch_size = 128
-if (sys.argv[1] == "play"):
-    print('original corpus length:', len(text))
-    batch_size = 1
-    text = text[:5000]
-    OUTPUT_COUNT = 100
-    maxlen = 20
+
 
 print('corpus length:', len(text))
 
@@ -111,8 +106,7 @@ for iteration in range(1, 60):
             sentence = sentence[1:] + next_char
 
         to_save.append(generated)
-        if (sys.argv[1] == "play"):
-            print(generated)
+
 
     # saving weights generated text to file
     ts = time.time()
