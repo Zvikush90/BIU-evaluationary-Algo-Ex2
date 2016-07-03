@@ -244,3 +244,122 @@ Epoch 1/1
 
 ----- diversity: 1.2
 ----- Generating with seed: " the yellow field. "He's even bigger tha"
+
+--------------------------------------------------
+Iteration 15
+Epoch 1/1
+3091913/3091913 [==============================] - 45834s - loss: 1.1438 - acc: 0.6434
+
+----- diversity: 0.2
+----- Generating with seed: " you sail. A few at least." "And how am "
+
+----- diversity: 0.5
+----- Generating with seed: " you sail. A few at least." "And how am "
+
+----- diversity: 1.0
+----- Generating with seed: " you sail. A few at least." "And how am "
+
+----- diversity: 1.2
+----- Generating with seed: " you sail. A few at least." "And how am "
+
+--------------------------------------------------
+Iteration 16
+Epoch 1/1
+3091913/3091913 [==============================] - 55594s - loss: 1.1378 - acc: 0.6450
+
+----- diversity: 0.2
+----- Generating with seed: "able. "My lord. You look different witho"
+
+----- diversity: 0.5
+----- Generating with seed: "able. "My lord. You look different witho"
+
+----- diversity: 1.0
+----- Generating with seed: "able. "My lord. You look different witho"
+
+----- diversity: 1.2
+----- Generating with seed: "able. "My lord. You look different witho"
+
+--------------------------------------------------
+Iteration 17
+Epoch 1/1
+3091913/3091913 [==============================] - 76853s - loss: 1.1318 - acc: 0.6470
+
+----- diversity: 0.2
+----- Generating with seed: "loves. "A boy they took," his father sai"
+
+----- diversity: 0.5
+----- Generating with seed: "loves. "A boy they took," his father sai"
+
+----- diversity: 1.0
+----- Generating with seed: "loves. "A boy they took," his father sai"
+
+----- diversity: 1.2
+----- Generating with seed: "loves. "A boy they took," his father sai"
+
+--------------------------------------------------
+Iteration 18
+Epoch 1/1
+3091913/3091913 [==============================] - 72901s - loss: 1.1266 - acc: 0.6484
+
+----- diversity: 0.2
+----- Generating with seed: "ourse, but Lancel might have suited, or "
+
+----- diversity: 0.5
+----- Generating with seed: "ourse, but Lancel might have suited, or "
+
+----- diversity: 1.0
+----- Generating with seed: "ourse, but Lancel might have suited, or "
+
+----- diversity: 1.2
+----- Generating with seed: "ourse, but Lancel might have suited, or "
+
+--------------------------------------------------
+Iteration 19
+Epoch 1/1
+3091913/3091913 [==============================] - 67389s - loss: 1.1213 - acc: 0.6499
+
+----- diversity: 0.2
+----- Generating with seed: "e had not seen Tris Botley since... no, "
+
+----- diversity: 0.5
+----- Generating with seed: "e had not seen Tris Botley since... no, "
+
+----- diversity: 1.0
+----- Generating with seed: "e had not seen Tris Botley since... no, "
+
+----- diversity: 1.2
+----- Generating with seed: "e had not seen Tris Botley since... no, "
+
+--------------------------------------------------
+Iteration 20
+Epoch 1/1
+3091913/3091913 [==============================] - 45500s - loss: 1.1164 - acc: 0.6514
+
+----- diversity: 0.2
+----- Generating with seed: "avos lifted his hand to his chest, where"
+
+----- diversity: 0.5
+----- Generating with seed: "avos lifted his hand to his chest, where"
+
+----- diversity: 1.0
+----- Generating with seed: "avos lifted his hand to his chest, where"
+
+----- diversity: 1.2
+----- Generating with seed: "avos lifted his hand to his chest, where"
+
+--------------------------------------------------
+Iteration 21
+Epoch 1/1
+3091913/3091913 [==============================] - 47777s - loss: 1.1120 - acc: 0.6527
+
+----- diversity: 0.2
+----- Generating with seed: "y. I said as much to Maester Cressen, th"
+
+----- diversity: 0.5
+----- Generating with seed: "y. I said as much to Maester Cressen, th"
+
+----- diversity: 1.0
+----- Generating with seed: "y. I said as much to Maester Cressen, th"
+
+----- diversity: 1.2
+----- Generating with seed: "y. I said as much to Maester Cressen, th"
